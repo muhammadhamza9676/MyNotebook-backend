@@ -5,7 +5,7 @@ const BASE_URL = process.env.BASE_URL;
 
 const connectToMongo = async () => {
     try {
-      const conn = await mongoose.connect(`${BASE_URL}/mynotebook`, {
+      const conn = await mongoose.connect(`${BASE_URL}`, {
         useNewUrlParser: true,
       });
       console.log(`MongoDB Connected: ${conn.connection.host}`);
